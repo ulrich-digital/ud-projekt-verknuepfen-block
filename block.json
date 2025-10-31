@@ -1,0 +1,39 @@
+{
+    "apiVersion": 2,
+    "name": "ud/projekt-verknuepfen",
+    "title": "Projekt verknüpfen",
+    "description": "Verlinkt einen Magazin-Beitrag mit einem Projekt.",
+    "category": "widgets",
+    "icon": "admin-links",
+    "keywords": [
+        "Projekt",
+        "Magazin",
+        "Verknüpfung"
+    ],
+    "textdomain": "ud-projekt-verknuepfen",
+    "editorScript": "file:./build/editor-script.js",
+    "script": "file:./build/frontend-script.js",
+    "style": "file:./build/frontend-style.css",
+    "editorStyle": "file:./build/editor-style.css",
+    "supports": {
+        "html": false,
+        "align": [
+            "wide",
+            "full"
+        ]
+    },
+    "attributes": {
+        "heading": {
+            "type": "string",
+            "default": ""
+        },
+        "moveToHead": {
+            "type": "boolean",
+            "default": true
+        },
+        "showIcon": {
+            "type": "boolean",
+            "default": true
+        }
+    }
+}
