@@ -20,7 +20,7 @@ registerPlugin('ud-projekt-verknuepfen-panel', {
 
         const [projects, setProjects] = useState([]);
         const [loading, setLoading] = useState(true);
-
+/*
         useEffect(function () {
             wp.apiFetch({ path: '/wp/v2/projekt?per_page=100' })
                 .then(function (posts) {
@@ -41,6 +41,34 @@ registerPlugin('ud-projekt-verknuepfen-panel', {
                     setLoading(false);
                 });
         }, []);
+*/
+useEffect(function () {
+    wp.apiFetch({ path: "/wp/v2/projekt?per_page=100" })
+        .then(function (posts) {
+            console.log("DEBUG Projekte API:", posts);
+
+            if (!Array.isArray(posts)) {
+                throw new Error("API-Antwort ist kein Array");
+            }
+
+            const options = [{ label: "– kein Projekt –", value: 0 }];
+
+            posts.forEach(function (p) {
+                options.push({
+                    label: p?.title?.rendered || `(ohne Titel #${p.id})`,
+                    value: p.id || 0,
+                });
+            });
+
+            setProjects(options);
+            setLoading(false);
+        })
+        .catch(function (error) {
+            console.error("DEBUG Projekt-API Fehler:", error);
+            setProjects([{ label: "Keine Projekte verfügbar", value: 0 }]);
+            setLoading(false);
+        });
+}, []);
 
         if (postType !== 'post' || typeof meta.ud_projekt_verknuepfen === 'undefined') {
             return el(
