@@ -1,5 +1,5 @@
 {
-    "apiVersion": 2,
+    "apiVersion": 3,
     "name": "ud/projekt-verknuepfen",
     "title": "Projekt verknüpfen",
     "description": "Verlinkt einen Magazin-Beitrag mit einem Projekt.",
