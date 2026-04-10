@@ -29,21 +29,3 @@ add_action('init', function() {
         },
     ]);
 });
-
-
-// functions.php oder Plugin
-// Meta automatisch entfernen, wenn der Block "ud/projekt-verknuepfen" nicht (mehr) im Inhalt steht.
-add_action('save_post', function ( $post_id, $post, $update ) {
-    if ( wp_is_post_autosave($post_id) || wp_is_post_revision($post_id) ) {
-        return;
-    }
-
-    // optional: nur auf bestimmte Post Types reagieren
-    // $allowed = ['post', 'page', 'projekt'];
-    // if ( ! in_array( get_post_type($post_id), $allowed, true ) ) return;
-
-    if ( ! has_block( 'ud/projekt-verknuepfen', $post ) ) {
-        delete_post_meta( $post_id, 'ud_projekt_verknuepfen' );
-    }
-}, 10, 3);
-
