@@ -28,7 +28,7 @@ Dadurch kann der Block flexibel im Inhalt platziert werden, während die Auswahl
 
 ## Screenshots
 
-![Frontend-Ansicht](./ud-projekt_verknuepfen.png)
+![Frontend-Ansicht](./assets/ud-projekt-verknuepfen.png)
 *Darstellung der Projektverknüpfung im Frontend mit Icon und Titel.*
 
 
