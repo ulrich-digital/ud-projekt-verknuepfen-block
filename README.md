@@ -87,11 +87,21 @@ npm run build
 npm start
 ```
 
+## Einblicke in die Umsetzung
+
+Der Beitrag gibt Einblick in die entwickelte Lösung und ihre Funktionsweise. Das Projekt zeigt den konkreten Einsatz.
+
+- **Mehr zur Lösung:** [Magazinbeiträge und Projekte in WordPress verknüpfen](https://ulrich.digital/magazinbeitrage-und-projekte-in-wordpress-verknupfen/)
+- **Einblick ins Projekt:** [Im Fluss der Muota](https://ulrich.digital/referenzen/interaktives-kartenportal/)
+
 ## Autor
 
 [ulrich.digital gmbh](https://ulrich.digital)
 
 ## Lizenz
 
-GPL v2 or later  
-[https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
+Dieses Projekt steht unter der [ulrich.digital Nutzungslizenz 1.0](LICENSE).
+
+Die unveränderte Software darf in eigenen und kommerziellen Projekten eingesetzt werden. Auf jeder öffentlich erreichbaren Website oder Anwendung muss [ulrich.digital gmbh](https://ulrich.digital) im Impressum, in einem Credits-Bereich oder auf einer vergleichbaren Informationsseite genannt werden. Verkauf, eigenständige Weitergabe, Unterlizenzierung und Änderungen bedürfen der vorherigen schriftlichen Zustimmung von ulrich.digital gmbh.
+
+Komponenten Dritter behalten ihre jeweiligen Lizenz- und Nutzungsbedingungen.
